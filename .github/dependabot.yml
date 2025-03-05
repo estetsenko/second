@@ -2,6 +2,6 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    directory: "/"
+    directory: "/t"
     schedule:
       interval: "weekly"
