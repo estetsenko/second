@@ -1,7 +1,14 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      spring:
+        patterns:
+          - "org.springframework*"
+        update-types:
+          - "major"
+          - "minor"
