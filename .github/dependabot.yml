@@ -1,7 +1,11 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "weekly"
+    versioning-strategy: "increase"
+    ignore:
+      - dependency-name: "org.springframework:*"
+        versions: [ "(,3.3.0]" ]
